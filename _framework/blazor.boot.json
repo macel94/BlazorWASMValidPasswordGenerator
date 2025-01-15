@@ -1,9 +1,9 @@
 {
   "mainAssemblyName": "BlazorWASMValidPasswordGenerator",
   "resources": {
-    "hash": "sha256-xKeCY94w/f4vIo9YqSHs5zozOJ5HeuD1rxihcKnD+do=",
+    "hash": "sha256-fDxdPy/1aie/vwrwAlH64j6oJThsV+1CjP7mOMMKnrg=",
     "fingerprinting": {
-      "BlazorWASMValidPasswordGenerator.jglh8wx47r.wasm": "BlazorWASMValidPasswordGenerator.wasm",
+      "BlazorWASMValidPasswordGenerator.xmvq2ed2jy.wasm": "BlazorWASMValidPasswordGenerator.wasm",
       "Microsoft.AspNetCore.Components.ipfomfgkli.wasm": "Microsoft.AspNetCore.Components.wasm",
       "Microsoft.AspNetCore.Components.Web.gr7hxgmn3j.wasm": "Microsoft.AspNetCore.Components.Web.wasm",
       "Microsoft.AspNetCore.Components.WebAssembly.rgalgivgqt.wasm": "Microsoft.AspNetCore.Components.WebAssembly.wasm",
@@ -37,7 +37,7 @@
       "System.Text.Json.3ool2iykp8.wasm": "System.Text.Json.wasm",
       "System.Text.RegularExpressions.bsbb5ck7et.wasm": "System.Text.RegularExpressions.wasm",
       "dotnet.native.7mrocztpbx.js": "dotnet.native.js",
-      "dotnet.native.q1p3kuadny.wasm": "dotnet.native.wasm",
+      "dotnet.native.yz751kf5cg.wasm": "dotnet.native.wasm",
       "dotnet.js": "dotnet.js",
       "dotnet.runtime.rubq0v1yiy.js": "dotnet.runtime.js"
     },
@@ -48,10 +48,10 @@
       "dotnet.runtime.rubq0v1yiy.js": "sha256-gypqZnsxxUh4y4EJmawvOCaX4hoTaesVGwIgWXwZcNw="
     },
     "wasmNative": {
-      "dotnet.native.q1p3kuadny.wasm": "sha256-crLexBh8JuSTnh6jMbvkcVZfl9ZNdp7mmYSCb38J5aI="
+      "dotnet.native.yz751kf5cg.wasm": "sha256-vlinS4eNWLB7DDcqB6miDZsgd3CX7Jebedkbmc6DzRE="
     },
     "coreAssembly": {
-      "BlazorWASMValidPasswordGenerator.jglh8wx47r.wasm": "sha256-HeGEh1TA50HLFuond6yM/LxX0KsOqpVcAzFEn4uRQEo=",
+      "BlazorWASMValidPasswordGenerator.xmvq2ed2jy.wasm": "sha256-qawm//zyhZ0TweZADC/fAXIHOQe2IxwFKWAFK9gDpiQ=",
       "Microsoft.AspNetCore.Components.ipfomfgkli.wasm": "sha256-eigwXMvv/CLhxLBGhaBeajOigXesuwTodQ7qpHc1zIQ=",
       "Microsoft.AspNetCore.Components.Web.gr7hxgmn3j.wasm": "sha256-jGJGZu86LoIhumOisej9aiqergOyWcliiUcZM8yhiDc=",
       "Microsoft.AspNetCore.Components.WebAssembly.rgalgivgqt.wasm": "sha256-xU9yYTG593PEubnS5ovf66v85PTlz6bNmirSD/lREYc=",
