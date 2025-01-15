@@ -1,0 +1,50 @@
+﻿@page "/"
+@using BlazorWASMValidPasswordGenerator.Services
+@inject IJSRuntime JSRuntime
+
+<PageTitle>WGS Password Generator</PageTitle>
+
+<h1>Welcome, Anonymous User!</h1>
+
+<p>
+    This tool helps you generate strong passwords that comply with WGS password policies.
+</p>
+
+<p>
+    <strong>Important:</strong> This application does not store, log, or transmit your generated passwords in any way. Each generated password is created randomly and is not saved.
+    Even if a valid password is generated, on refresh or a new password generation, you will get a different password, the previous password will be lost, so be sure to use the copy button.
+    Your security and privacy are our top priorities.
+</p>
+
+@if (string.IsNullOrEmpty(generatedPassword))
+{
+    <button class="btn btn-primary" @onclick="GeneratePassword">Generate Password</button>
+}
+else
+{
+    <div class="password-container">
+        <input type="text" readonly value="@generatedPassword" id="passwordField" />
+        <button class="btn btn-secondary" @onclick="CopyPassword">
+            <i class="oi oi-clipboard"></i> Copy
+        </button>
+    </div>
+    <button class="btn btn-primary mt-3" @onclick="GeneratePassword">Generate Another Password</button>
+    <div class="alert alert-warning mt-3" role="alert">
+        Please ensure you save your password before navigating away from this page.
+    </div>
+}
+
+@code {
+    private string generatedPassword;
+
+    private void GeneratePassword()
+    {
+        generatedPassword = PasswordGenerator.GenerateValidPassword();
+    }
+
+    private async Task CopyPassword()
+    {
+        await JSRuntime.InvokeVoidAsync("navigator.clipboard.writeText", generatedPassword);
+        await JSRuntime.InvokeVoidAsync("showToast", "Password copied to clipboard!");
+    }
+}
