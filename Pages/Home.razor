@@ -39,7 +39,7 @@ else
 
     private void GeneratePassword()
     {
-        generatedPassword = PasswordGenerator.GenerateValidPassword();
+        generatedPassword = PasswordGenerator.GenerateValidPassword(isPrivileged: true);
     }
 
     private async Task CopyPassword()
