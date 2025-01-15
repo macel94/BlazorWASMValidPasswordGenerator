@@ -10,6 +10,12 @@ jobs:
     steps:
     # uses GitHub's checkout action to checkout code form the master branch
     - uses: actions/checkout@v4
+    - name: Set up .NET Core
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: "9.x"    
+    - run: dotnet workload install wasm-tools
+
     # publishes Blazor project to the release-folder
     - name: Publish .NET Core Project
       run: dotnet publish BlazorWASMValidPasswordGenerator.csproj -c Release -o release --nologo
